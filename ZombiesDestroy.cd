@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jugador" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAACAIAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Clases\Jugador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Clases.ObjetoBase" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAIoAQAAEAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Clases\ObjetoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Clases.Arma" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAAAAIQAAAAAAABACAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Clases\Arma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Clases.Caja" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Clases\Caja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Clases.Municion" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Clases\Municion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Clases.Tambor" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Clases\Tambor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

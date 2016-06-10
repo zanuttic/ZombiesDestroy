@@ -1,11 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public class Municion: MonoBehaviour
+﻿
+namespace Assets.Clases
 {
-	public string Nombre{ get; set; }
-	public int Daño{ get; set; }
-	public float Alcance { get; set;}
-	public float velocidad{ get; set;}
+    public class Municion : ObjetoBase
+    {
+        /// <summary>
+        /// Nivel de Daño que causa la municion al golpear contra un objetivo
+        /// </summary>
+        public int Daño{ get; set; }
+        
 
+    }
 }

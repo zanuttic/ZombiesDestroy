@@ -1,30 +1,52 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Assets.Clases;
 
-public class Jugador : MonoBehaviour
+public class Jugador : ObjetoBase
+
 {
-	public Arma  armas;//generar una coleccion
-	public int vida { get; set;}
-	public float velocidad{ get; set;}
-	private Arma armaActiva{ get; set; }
+    /// <summary>
+    /// Coleccion de Armas que va recuperando el jugador
+    /// </summary>
+    private List<Arma>  _armas = new List<Arma>();
+
+    /// <summary>
+    /// Coleccion de Armas que va recuperando el jugador
+    /// Solo lectura
+    /// </summary>
+    public List<Arma> Armas
+    {
+        get { return _armas; }
+        //set { _armas = value; }
+    }
+
+    /// <summary>
+    /// Arma seleccionada por el jugador. 
+    /// Solo lectura
+    /// </summary>
+    public Arma ArmaActiva { get; private set; }
 
 
-
-	private void getArma()
+    public void getArma(Arma arma)
 	{
-		//recupera un arma
+        Armas.Add(arma);
+        ArmaActiva = arma;
+	    //recupera un arma
 	}
-	private void Dispara(Arma arma)
+	public void Dispara(Arma arma)
 	{
 		//recibe el arma y resuleve el disparo 
 
+        //si se queda sin municiones cambia de arma en forma automatica
+        CambiarArma();
 	}
 
 	//agregar los distintos metodos a cada colisión
-	private void CambiarArma(Arma armas)
+	private void CambiarArma()
 	{
-		
-	}
+        ArmaActiva = _armas.OrderBy(a => a.Ponderacion).Single(a => a.Cargador != 0);
+        
+    }
 
 
 
